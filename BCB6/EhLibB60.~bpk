@@ -3,20 +3,41 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="EhLibB60.bpl"/>
-    <OBJFILES value="EhLibB60.obj CalculatorEh.obj DBCtrlsEh.obj DBGridEh.obj 
-      DBGridEhImpExp.obj DBLookupEh.obj DBLookupGridsEh.obj DBSumLst.obj 
-      DbUtilsEh.obj EhLibConsts.obj PrnDbgEh.obj PrnDgDlg.obj PrntsEh.obj 
-      PropFilerEh.obj PropStorageEh.obj PrvFrmEh.obj PrViewEh.obj 
-      ToolCtrlsEh.obj DBGridEhFindDlgs.obj EhLibVcl.obj"/>
+    <PROJECT value="E:\UAndrew\BCB\6\BPL\EhLibB60.bpl"/>
+    <OBJFILES value="..\..\..\BCB\6\OBJ\EhLibB60.obj ..\..\..\BCB\6\OBJ\CalculatorEh.obj 
+      ..\..\..\BCB\6\OBJ\DBCtrlsEh.obj ..\..\..\BCB\6\OBJ\DBGridEh.obj 
+      ..\..\..\BCB\6\OBJ\DBGridEhImpExp.obj ..\..\..\BCB\6\OBJ\DBLookupEh.obj 
+      ..\..\..\BCB\6\OBJ\DBLookupGridsEh.obj ..\..\..\BCB\6\OBJ\DBSumLst.obj 
+      ..\..\..\BCB\6\OBJ\DbUtilsEh.obj ..\..\..\BCB\6\OBJ\EhLibConsts.obj 
+      ..\..\..\BCB\6\OBJ\PrnDbgEh.obj ..\..\..\BCB\6\OBJ\PrnDgDlg.obj 
+      ..\..\..\BCB\6\OBJ\PrntsEh.obj ..\..\..\BCB\6\OBJ\PropFilerEh.obj 
+      ..\..\..\BCB\6\OBJ\PropStorageEh.obj ..\..\..\BCB\6\OBJ\PrvFrmEh.obj 
+      ..\..\..\BCB\6\OBJ\PrViewEh.obj ..\..\..\BCB\6\OBJ\ToolCtrlsEh.obj"/>
     <RESFILES value="EhLibB60.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) CalculatorEh.dfm PrnDgDlg.dfm PrvFrmEh.dfm DBGridEhFindDlgs.dfm"/>
+    <RESDEPEN value="$(RESFILES) CalculatorEh.dfm PrnDgDlg.dfm PrvFrmEh.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value=""/>
-    <SPARELIBS value="rtl.lib"/>
+    <LIBRARIES value="dss.lib qrpt.lib teeqr.lib tee.lib teedb.lib teeui.lib dclusr.lib 
+      PKATImageBox.lib QImport3RT_C6.lib adortl.lib DRMSLib6.lib 
+      QExport3RT_C6.lib vcldbx.lib cxExportVCLC6.lib cxGridC6.lib 
+      dxBarExtItemsC6.lib dxBarC6.lib dxComnC6.lib cxPageControlVCLC6.lib 
+      cxExtEditorsVCLC6.lib cxDataC6.lib cxEditorsVCLC6.lib dxGDIPlusC6.lib 
+      dxThemeC6.lib cxLibraryVCLC6.lib dxCoreC6.lib FRORA6.lib FRBDE6.lib 
+      FR6.lib oraprov60.lib odac60.lib odacvcl60.lib dac60.lib dacvcl60.lib 
+      indy.lib dclocx.lib nmfast.lib dbexpress.lib inetdbxpress.lib bdertl.lib 
+      inetdbbde.lib bcbsmp.lib visualdbclx.lib cds.lib ibxpress.lib"/>
+    <SPARELIBS value="rtl.lib vcldb.lib ibxpress.lib cds.lib visualdbclx.lib bcbsmp.lib 
+      inetdbbde.lib bdertl.lib inetdbxpress.lib dbexpress.lib nmfast.lib 
+      dclocx.lib indy.lib dacvcl60.lib dac60.lib odacvcl60.lib odac60.lib 
+      oraprov60.lib FR6.lib FRBDE6.lib FRORA6.lib dxCoreC6.lib 
+      cxLibraryVCLC6.lib dxThemeC6.lib dxGDIPlusC6.lib cxEditorsVCLC6.lib 
+      cxDataC6.lib cxExtEditorsVCLC6.lib cxPageControlVCLC6.lib dxComnC6.lib 
+      dxBarC6.lib dxBarExtItemsC6.lib cxGridC6.lib cxExportVCLC6.lib vcldbx.lib 
+      QExport3RT_C6.lib DRMSLib6.lib adortl.lib QImport3RT_C6.lib 
+      PKATImageBox.lib dclusr.lib teeui.lib teedb.lib tee.lib teeqr.lib qrpt.lib 
+      dss.lib"/>
     <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
@@ -29,7 +50,7 @@
     <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="EhLibB60.cpp"/>
     <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
@@ -37,10 +58,12 @@
     <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
       -tWM"/>
-    <PFLAGS value="-$YD -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <PFLAGS value="-N2E:\UAndrew\BCB\6\OBJ -N0E:\UAndrew\BCB\6\OBJ -$YD -$L- -$D- -$A8 -v 
+      -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zd"/>
-    <LFLAGS value="-D&quot;EhLib 3.6&quot; -aa -Tpp -Gpr -x -Gn -Gl -Gi"/>
+    <LFLAGS value="-lE:\UAndrew\BCB\6\BPI -IE:\UAndrew\BCB\6\OBJ -D&quot;EhLib 3.6&quot; -aa -Tpp -Gpr 
+      -x -Gn -Gl -Gi"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
@@ -52,7 +75,7 @@
   <FILELIST>
       <FILE FILENAME="EhLibB60.res" FORMNAME="" UNITNAME="EhLibB60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="EhLibB60.cpp" FORMNAME="" UNITNAME="EhLibB60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="CalculatorEh.pas" FORMNAME="CalculatorEh" UNITNAME="CalculatorEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBCtrlsEh.pas" FORMNAME="" UNITNAME="DBCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBGridEh.pas" FORMNAME="" UNITNAME="DBGridEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
@@ -70,9 +93,9 @@
       <FILE FILENAME="PrvFrmEh.pas" FORMNAME="PreviewFormEh" UNITNAME="PrvFrmEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="PrViewEh.pas" FORMNAME="" UNITNAME="PrViewEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="ToolCtrlsEh.pas" FORMNAME="" UNITNAME="ToolCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
@@ -96,13 +119,13 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=
 FileDescription=
-FileVersion=3.6.0.0
+FileVersion=3.0.0.0
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=3.6.0.0
+ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
@@ -111,9 +134,10 @@ Item0=$(BCB)\include;$(BCB)\include\vcl
 Item1=..\Projects;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=2
-Item0=$(BCB)\lib\obj;$(BCB)\lib
-Item1=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Count=3
+Item0=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
@@ -122,6 +146,18 @@ Item0=$(BCB)\source\vcl
 [HistoryLists\hlConditionals]
 Count=1
 Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=E:\UAndrew\BCB\6\OBJ
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=E:\UAndrew\BCB\6\BPL
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=E:\UAndrew\BCB\6\BPI
 
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl

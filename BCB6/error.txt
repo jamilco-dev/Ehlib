@@ -1,0 +1,2 @@
+Build
+  [Linker Fatal Error] Fatal: Unable to open file 'CXEXPORTVCLC6.LIB'

@@ -3,11 +3,16 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="EhLibB60.bpl"/>
-    <OBJFILES value="EhLibB60.obj CalculatorEh.obj DBCtrlsEh.obj DBGridEh.obj 
-      DBGridEhImpExp.obj DBLookupEh.obj DBLookupGridsEh.obj DBSumLst.obj 
-      DbUtilsEh.obj EhLibConsts.obj PrnDbgEh.obj PrnDgDlg.obj PrntsEh.obj 
-      PropFilerEh.obj PropStorageEh.obj PrvFrmEh.obj PrViewEh.obj ToolCtrlsEh.obj"/>
+    <PROJECT value="E:\UAndrew\BCB\6\BPL\EhLibB60.bpl"/>
+    <OBJFILES value="..\..\..\BCB\6\OBJ\EhLibB60.obj ..\..\..\BCB\6\OBJ\CalculatorEh.obj 
+      ..\..\..\BCB\6\OBJ\DBCtrlsEh.obj ..\..\..\BCB\6\OBJ\DBGridEh.obj 
+      ..\..\..\BCB\6\OBJ\DBGridEhImpExp.obj ..\..\..\BCB\6\OBJ\DBLookupEh.obj 
+      ..\..\..\BCB\6\OBJ\DBLookupGridsEh.obj ..\..\..\BCB\6\OBJ\DBSumLst.obj 
+      ..\..\..\BCB\6\OBJ\DbUtilsEh.obj ..\..\..\BCB\6\OBJ\EhLibConsts.obj 
+      ..\..\..\BCB\6\OBJ\PrnDbgEh.obj ..\..\..\BCB\6\OBJ\PrnDgDlg.obj 
+      ..\..\..\BCB\6\OBJ\PrntsEh.obj ..\..\..\BCB\6\OBJ\PropFilerEh.obj 
+      ..\..\..\BCB\6\OBJ\PropStorageEh.obj ..\..\..\BCB\6\OBJ\PrvFrmEh.obj 
+      ..\..\..\BCB\6\OBJ\PrViewEh.obj ..\..\..\BCB\6\OBJ\ToolCtrlsEh.obj"/>
     <RESFILES value="EhLibB60.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -45,7 +50,7 @@
     <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="EhLibB60.cpp"/>
     <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib;E:\UAndrew\BCB\6\BPI"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
@@ -53,10 +58,12 @@
     <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
       -tWM"/>
-    <PFLAGS value="-$YD -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <PFLAGS value="-N2E:\UAndrew\BCB\6\OBJ -N0E:\UAndrew\BCB\6\OBJ -$YD -$L- -$D- -$A8 -v 
+      -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zd"/>
-    <LFLAGS value="-D&quot;EhLib 3.6&quot; -aa -Tpp -Gpr -x -Gn -Gl -Gi"/>
+    <LFLAGS value="-lE:\UAndrew\BCB\6\BPI -IE:\UAndrew\BCB\6\OBJ -D&quot;EhLib 3.6&quot; -aa -Tpp -Gpr 
+      -x -Gn -Gl -Gi"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
@@ -112,13 +119,13 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=
 FileDescription=
-FileVersion=3.6.0.0
+FileVersion=3.0.0.0
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=3.6.0.0
+ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
@@ -127,9 +134,11 @@ Item0=$(BCB)\include;$(BCB)\include\vcl
 Item1=..\Projects;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=2
-Item0=$(BCB)\lib\obj;$(BCB)\lib
-Item1=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Count=4
+Item0=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib;E:\UAndrew\BCB\6\BPI
+Item1=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
@@ -138,6 +147,19 @@ Item0=$(BCB)\source\vcl
 [HistoryLists\hlConditionals]
 Count=1
 Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=E:\UAndrew\BCB\6\OBJ
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=E:\UAndrew\BCB\6\BPL\
+Item1=E:\UAndrew\BCB\6\BPL
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=E:\UAndrew\BCB\6\BPI
 
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl
