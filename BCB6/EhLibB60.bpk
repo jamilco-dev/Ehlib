@@ -27,7 +27,7 @@
       dxThemeC6.lib cxLibraryVCLC6.lib dxCoreC6.lib FRORA6.lib FRBDE6.lib 
       FR6.lib oraprov60.lib odac60.lib odacvcl60.lib dac60.lib dacvcl60.lib 
       indy.lib dclocx.lib nmfast.lib dbexpress.lib inetdbxpress.lib bdertl.lib 
-      inetdbbde.lib bcbsmp.lib visualdbclx.lib cds.lib ibxpress.lib"/>
+      inetdbbde.lib visualdbclx.lib cds.lib ibxpress.lib"/>
     <SPARELIBS value="rtl.lib vcldb.lib ibxpress.lib cds.lib visualdbclx.lib bcbsmp.lib 
       inetdbbde.lib bdertl.lib inetdbxpress.lib dbexpress.lib nmfast.lib 
       dclocx.lib indy.lib dacvcl60.lib dac60.lib odacvcl60.lib odac60.lib 
@@ -38,7 +38,7 @@
       QExport3RT_C6.lib DRMSLib6.lib adortl.lib QImport3RT_C6.lib 
       PKATImageBox.lib dclusr.lib teeui.lib teedb.lib tee.lib teeqr.lib qrpt.lib 
       dss.lib"/>
-    <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi"/>
+    <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi vclx.bpi bcbsmp.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
@@ -75,7 +75,7 @@
   <FILELIST>
       <FILE FILENAME="EhLibB60.res" FORMNAME="" UNITNAME="EhLibB60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="EhLibB60.cpp" FORMNAME="" UNITNAME="EhLibB60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="CalculatorEh.pas" FORMNAME="CalculatorEh" UNITNAME="CalculatorEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBCtrlsEh.pas" FORMNAME="" UNITNAME="DBCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBGridEh.pas" FORMNAME="" UNITNAME="DBGridEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
@@ -93,9 +93,11 @@
       <FILE FILENAME="PrvFrmEh.pas" FORMNAME="PreviewFormEh" UNITNAME="PrvFrmEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="PrViewEh.pas" FORMNAME="" UNITNAME="PrViewEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="ToolCtrlsEh.pas" FORMNAME="" UNITNAME="ToolCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\Lib\Release\vclx.bpi" FORMNAME="" UNITNAME="vclx" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\Lib\Release\bcbsmp.bpi" FORMNAME="" UNITNAME="bcbsmp" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

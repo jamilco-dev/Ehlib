@@ -38,7 +38,7 @@
       QExport3RT_C6.lib DRMSLib6.lib adortl.lib QImport3RT_C6.lib 
       PKATImageBox.lib dclusr.lib teeui.lib teedb.lib tee.lib teeqr.lib qrpt.lib 
       dss.lib"/>
-    <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi"/>
+    <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi vclx.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
@@ -50,7 +50,7 @@
     <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="EhLibB60.cpp"/>
     <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib;E:\UAndrew\BCB\6\BPI"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
@@ -75,7 +75,7 @@
   <FILELIST>
       <FILE FILENAME="EhLibB60.res" FORMNAME="" UNITNAME="EhLibB60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="EhLibB60.cpp" FORMNAME="" UNITNAME="EhLibB60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="CalculatorEh.pas" FORMNAME="CalculatorEh" UNITNAME="CalculatorEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBCtrlsEh.pas" FORMNAME="" UNITNAME="DBCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="DBGridEh.pas" FORMNAME="" UNITNAME="DBGridEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
@@ -93,9 +93,10 @@
       <FILE FILENAME="PrvFrmEh.pas" FORMNAME="PreviewFormEh" UNITNAME="PrvFrmEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="PrViewEh.pas" FORMNAME="" UNITNAME="PrViewEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="ToolCtrlsEh.pas" FORMNAME="" UNITNAME="ToolCtrlsEh" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="..\..\ODAC\Source\CBuilder6\vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\ODAC\Source\CBuilder6\vcldb.bpi" FORMNAME="" UNITNAME="vcldb" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="E:\Borland\CBuilder6\Lib\Release\vclx.bpi" FORMNAME="" UNITNAME="vclx" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
@@ -134,10 +135,11 @@ Item0=$(BCB)\include;$(BCB)\include\vcl
 Item1=..\Projects;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=3
-Item0=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib
-Item1=$(BCB)\lib\obj;$(BCB)\lib
-Item2=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Count=4
+Item0=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib;E:\UAndrew\BCB\6\BPI
+Item1=$(BCB)\Projects\Lib;..\..\ODAC\Source\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\Projects;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
@@ -152,8 +154,9 @@ Count=1
 Item0=E:\UAndrew\BCB\6\OBJ
 
 [HistoryLists\hlFinalOutputDir]
-Count=1
-Item0=E:\UAndrew\BCB\6\BPL
+Count=2
+Item0=E:\UAndrew\BCB\6\BPL\
+Item1=E:\UAndrew\BCB\6\BPL
 
 [HistoryLists\hIBPIOutputDir]
 Count=1
